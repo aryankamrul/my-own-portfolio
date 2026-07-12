@@ -2,12 +2,14 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
  section{
     max-width: 1200px;
     margin: auto;
+    padding: 0 20px;
  }
-/*common button*/
+/*common button*/ 
 .common-btn{
 background-color: #FD6E0A;
 padding: 10px 20px;
@@ -86,7 +88,7 @@ nav span{
     color: #FD6E0A;
     
 }
-.button{
+ .button{
  padding: 10px 20px;
 border: none;
 border-radius: 8px;
@@ -142,6 +144,7 @@ border-radius: 8px;
 /* card section*/
 .what-i-do{
     text-align: center;
+    margin: 60px auto;
 }
 .what-i-do h1{
     font-weight: bold;
@@ -177,6 +180,137 @@ border: 2px solid wheat;
     padding-top: 30px;
     font-size: 16px;
 }
+/* resume secton*/
 
+.resume{
+
+}
+.resume h2{
+    text-align: center;
+    margin: 100px auto;
+}
+
+.parent-resume{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 60px;
+}
+.resume h3{
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+.item {
+    margin-bottom: 25px;
+}
+.item h4{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.item h5{
+    color: #757575;
+    margin-bottom: 10px;
+}
+.item p{
+    color: #757575;
+   line-height: 1.7;
+}
+hr{
+    margin: 30px 0;
+}
+ .btn{
+    display: block;
+margin: 0 auto;
+
+
+ }
+ /*gellery section*/
+ .amazing-parent{
+    text-align: center;
+    margin: 60px auto;
+ }
+ .amazing-parent h1{
+   margin-bottom: 30px;
+ }
+ .gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+ .gallery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 250px;
+    grid-template-areas: 
+    "one two three"
+    "four two six"
+    " four five six "
+    ;
+    gap: 10px;
+
+ }
+ .box1{
+    
+    grid-area: one;
+ }
+ .box2{
+    grid-area: two;
+ }
+ .box3{
+    grid-area: three;
+ }
+ .box4{
+    grid-area: four;
+ }
+ .box5{
+    grid-area: five;
+ }
+ .box6{
+    grid-area: six;
+ }
+ /* footer section*/
+ footer {
+    
+max-width: 1200px;
+margin: auto;
+    
+   margin-top: 70px !important;
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   background-color: #FFF8F3;
+   padding: 20px;
+   border-radius: 10px;
+ }
+ .left-footer{
+   text-align: left;
+    margin: 100px auto;
+    line-height: 1.7;
+ }
+   
+
+ 
+ 
 
     
+ 
+ .right-footer{
+    padding: 10px 20px;
+ }
+ footer form{
+    padding: 20px 10px ; padding-bottom: 20px;
+ }
+ footer form  input ,textarea
+  {
+
+  
+    border: none;
+    outline: none;
+    background-color: white;
+    padding: 8px 15px ;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+ }
+ form .common-btn{
+    margin-top: 20px;
+ }
